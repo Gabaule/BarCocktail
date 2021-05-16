@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <string.h>
 #include "TypeStruct.h"
-#include "Allocation.h"
 #include "Intitialisation.h"
 #include "Ajout_Supression.h"
+#include "Affichage.h"
 
 void aff_juices (juice* Tab_Juices, int n){
     int i;

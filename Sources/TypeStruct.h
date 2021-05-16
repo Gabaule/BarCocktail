@@ -52,4 +52,15 @@ typedef struct tno_alcohol_cocktail { //Type cocktail sans alcool
     no_alcohol_drink no_alcohol; //les boissons nonn alcoolisées
 } noalcohol_cocktail;
 
+typedef struct tdrinks{
+    juice jus;
+    squash sirops;
+    liqueur liqeurs;
+    soda sodas;
+    alcohol_drink alcool;
+    no_alcohol_drink boissons_sans_alcool;
+    alcohol_cocktail cocktail_alcool;
+    noalcohol_cocktail cocktail_sans_alcool;
+}Drinks;
+
 #endif

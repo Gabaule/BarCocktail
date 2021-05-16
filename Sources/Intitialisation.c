@@ -2,12 +2,12 @@
 #include <stdlib.h>
 #include <string.h>
 #include "TypeStruct.h"
-#include "Allocation.h"
+
 #include "Intitialisation.h"
 
 int TailleTab (){
     int n;
-    puts ("Entrer la taille du tableau");
+    puts ("\n Entrer la taille du tableau");
     scanf ("%d", &n);
     return n;
 }

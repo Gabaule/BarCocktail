@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 #include "TypeStruct.h"
-#include "Allocation.h"
 #include "Intitialisation.h"
 #include "Ajout_Supression.h"
 
@@ -137,13 +136,121 @@ noalcohol_cocktail* add_no_alcohol_cocktails (noalcohol_cocktail* Tab_no_alcohol
 juice* remove_juices (juice* Tab_Juices,int n2, int n, juice x){
     int i;
     int j;
-    juice* Tab_Juices_rem = malloc (n*sizeof(juice));
-    for(i=0; i<n; i++ ){
-         if(strcmp(Tab_Juices[i].name, x.name)== 0){
+    juice* Tab_Juices_rem = malloc (n2*sizeof(juice));
+    for(i = 0; i < n; i++ ){
+         if(strcmp(Tab_Juices[i].name, x.name) == 0){
+            printf ("%s \n", Tab_Juices[i].name);
             for(j=i; j < n; j++){
                 Tab_Juices_rem[j] = Tab_Juices[j+1];
             }
          }
     }
-    return Tab_Juices;
+    return Tab_Juices_rem;
+    free(Tab_Juices_rem);
+}
+
+squash* remove_squash (squash* Tab_squash,int n2, int n, squash x){
+    int i;
+    int j;
+    squash* Tab_Squash_rem = malloc (n2*sizeof(squash));
+    for(i = 0; i < n; i++ ){
+         if(strcmp(Tab_squash[i].name, x.name) == 0){
+            for(j=i; j < n; j++){
+                Tab_Squash_rem[j] = Tab_squash[j+1];
+            }
+         }
+    }
+    return Tab_Squash_rem;
+    free(Tab_Squash_rem);
+}
+
+soda* remove_soda (soda* Tab_soda,int n2, int n, soda x){
+    int i;
+    int j;
+    soda* Tab_Soda_rem = malloc (n2*sizeof(soda));
+    for(i = 0; i < n; i++ ){
+         if(strcmp(Tab_soda[i].name, x.name) == 0){
+            for(j=i; j < n; j++){
+                Tab_Soda_rem[j] = Tab_soda[j+1];
+            }
+         }
+    }
+    return Tab_Soda_rem;
+    free(Tab_Soda_rem);
+}
+
+liqueur* remove_liquors (liqueur* Tab_liquor, int n2, int n, liqueur x){
+    int i;
+    int j;
+    liqueur* Tab_liquor_rem = malloc (n2*sizeof(liqueur));
+    for(i = 0; i < n; i++ ){
+         if(strcmp(Tab_liquor[i].name, x.name) == 0){
+            for(j=i; j < n; j++){
+                Tab_liquor_rem[j] = Tab_liquor[j+1];
+            }
+         }
+    }
+    return Tab_liquor_rem;
+    free(Tab_liquor_rem);
+}
+
+no_alcohol_drink* remove_no_acohol_drinks (no_alcohol_drink* Tab_no_alcohol_drink, int n2, int n, no_alcohol_drink x){
+    int i;
+    int j;
+    no_alcohol_drink* Tab_no_alcohol_drink_rem = malloc (n2*sizeof(no_alcohol_drink));
+    for(i = 0; i < n; i++ ){
+         if(strcmp(Tab_no_alcohol_drink[i].name, x.name) == 0){
+            for(j=i; j < n; j++){
+                Tab_no_alcohol_drink_rem[j] = Tab_no_alcohol_drink[j+1];
+            }
+         }
+    }
+    return Tab_no_alcohol_drink_rem;
+    free(Tab_no_alcohol_drink_rem);
+}
+
+alcohol_drink* remove_acohol_drinks (alcohol_drink* Tab_alcohol_drink, int n2, int n, alcohol_drink x){
+    int i;
+    int j;
+    alcohol_drink* Tab_alcohol_drink_rem = malloc (n2*sizeof(alcohol_drink));
+    for(i = 0; i < n; i++ ){
+         if(strcmp(Tab_alcohol_drink[i].name, x.name) == 0){
+            for(j=i; j < n; j++){
+                Tab_alcohol_drink_rem[j] = Tab_alcohol_drink[j+1];
+            }
+         }
+    }
+    return Tab_alcohol_drink_rem;
+    free(Tab_alcohol_drink_rem);
+}
+
+alcohol_cocktail* remove_acohol_cocktail (alcohol_cocktail* Tab_alcohol_cocktail, int n2, int n, alcohol_cocktail x){
+    int i;
+    int j;
+    alcohol_cocktail* Tab_alcohol_cocktail_rem = malloc (n2*sizeof(alcohol_cocktail));
+    for(i = 0; i < n; i++ ){
+         if(strcmp(Tab_alcohol_cocktail[i].name, x.name) == 0){
+            for(j=i; j < n; j++){
+                Tab_alcohol_cocktail_rem[j] = Tab_alcohol_cocktail[j+1];
+            }
+         }
+    }
+    return Tab_alcohol_cocktail_rem;
+    free(Tab_alcohol_cocktail_rem);
+}
+
+
+noalcohol_cocktail* remove_no_acohol_cocktail (noalcohol_cocktail* Tab_no_alcohol_cocktail, int n2, int n, noalcohol_cocktail x){
+    int i;
+    int j;
+    noalcohol_cocktail* Tab_no_alcohol_cocktail_rem = malloc (n2*sizeof(noalcohol_cocktail));
+    for(i = 0; i < n; i++ ){
+         if(strcmp(Tab_no_alcohol_cocktail[i].name, x.name) == 0){
+            for(j=i; j < n; j++){
+                Tab_no_alcohol_cocktail_rem[j] = Tab_no_alcohol_cocktail[j+1];
+            }
+         }
+    }
+    return Tab_no_alcohol_cocktail_rem;
+    free(Tab_no_alcohol_cocktail_rem);
 }
