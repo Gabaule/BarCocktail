@@ -1,9 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "TypeStruct.h"
-
-#include "Initialisation.h"
+#include "typestruct.h"
+#include "initialisation.h"
 
 int TailleTab (){
     int n;

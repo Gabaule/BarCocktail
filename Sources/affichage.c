@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "TypeStruct.h"
-#include "Initialisation.h"
-#include "Ajout_Supression.h"
-#include "Affichage.h"
+#include "typestruct.h"
+#include "initialisation.h"
+#include "ajout_suppression.h"
+#include "affichage.h"
 
 void aff_juices (juice* Tab_Juices, int n){
     int i;

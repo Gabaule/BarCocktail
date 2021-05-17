@@ -5,23 +5,23 @@ EXEC=Projet
 
 all : $(EXEC)
 
-Projet : main.o menu.o initialisation.o ajout_suppression.o sauvegarde.o Menu.h TypeStruct.h Sauvegarde.h Affichage.h Ajout_Supression.h Initialisation.h
-		$(CC) -o main.o menu.o initialisation.o ajout_suppression.o sauvegarde.o Menu.h TypeStruct.h Sauvegarde.h Affichage.h Ajout_Supression.h Initialisation.h $(LDFLAGS)
+Projet : typestruct.h main.o menu.o initialisation.o ajout_suppression.o sauvegarde.o affichage.o menu.h sauvegarde.h affichage.h ajout_suppression.h initialisation.h affichage.h
+		$(CC) -o typestruct.h main.o menu.o initialisation.o ajout_suppression.o sauvegarde.o affichage.o menu.h sauvegarde.h affichage.h ajout_suppression.h initialisation.h affichage.h $(LDFLAGS)
 
-menu.o : Menu.c
-	$(CC) -c Menu.c $(CFLAGS)
+menu.o : menu.c
+	$(CC) -c menu.c $(CFLAGS)
 
-affichage.o : Affichage.c
+affichage.o : affichage.c
 	$(CC) -c affichage.c $(CFLAGS)
 
-ajout_suppression.o : Ajout_Supression.c
-	$(CC) -c Ajout_Supression.c $(CFLAGS)
+ajout_suppression.o : ajout_suppression.c
+	$(CC) -c ajout_suppression.c $(CFLAGS)
 
-initialisation.o : Initialisation.c
-	$(CC) -c Initialisation.c $(CFLAGS)
+initialisation.o : initialisation.c
+	$(CC) -c initialisation.c $(CFLAGS)
 
-sauvegarde.o : Sauvegarde.c
-	$(CC) -c Sauvegarde.c $(CFLAGS)
+sauvegarde.o : sauvegarde.c
+	$(CC) -c sauvegarde.c $(CFLAGS)
 
-main.o : Main.c
-	$(CC) -c Main.c $(CFLAGS)
+main.o : main.c
+	$(CC) -c main.c $(CFLAGS)

@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "TypeStruct.h"
-#include "Initialisation.h"
-#include "Ajout_Supression.h"
+#include "typestruct.h"
+#include "initialisation.h"
+#include "ajout_suppression.h"
 
 juice* add_Juices (juice* Tab_Juice, int n, int n2){
     int i = 0;

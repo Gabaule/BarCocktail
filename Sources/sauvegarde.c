@@ -3,10 +3,10 @@
 #include <time.h>  
 #include <math.h>
 #include <string.h>
-#include "TypeStruct.h"
-#include "Initialisation.h"
-#include "Ajout_Supression.h"
-#include "Sauvegarde.h"
+#include "typestruct.h"
+#include "initialisation.h"
+#include "ajout_suppression.h"
+#include "sauvegarde.h"
 
 /* Variables globales de fichiers */
 

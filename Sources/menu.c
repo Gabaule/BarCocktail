@@ -3,11 +3,11 @@
 #include <time.h>  
 #include <math.h>
 #include <string.h>
-#include "TypeStruct.h"
-#include "Initialisation.h"
-#include "Ajout_Supression.h"
-#include "Affichage.h"
-#include "Menu.h"
+#include "typestruct.h"
+#include "initialisation.h"
+#include "ajout_suppression.h"
+#include "affichage.h"
+#include "menu.h"
 
 /* Variables globales de Taille */
 
