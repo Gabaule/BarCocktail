@@ -3,7 +3,7 @@
 #include <string.h>
 #include "TypeStruct.h"
 
-#include "Intitialisation.h"
+#include "Initialisation.h"
 
 int TailleTab (){
     int n;
@@ -94,12 +94,8 @@ no_alcohol_drink* defineTab_no_alcohol_drink (int n){
     free (Tabsquash);
 }
 
-alcohol_cocktail* defineTab_alcohol_cokctail (int n, int Verite){
+alcohol_cocktail* defineTab_alcohol_cokctail (int n){
     alcohol_cocktail* Tab_Alcohol_cocktail = malloc (n*sizeof (alcohol_cocktail));
-    no_alcohol_drink* Tab_no_alcohol_drink = malloc (n*sizeof(alcohol_drink));
-    alcohol_drink* Tab_alcohol_drink = malloc (n*sizeof(alcohol_drink));
-    Tab_no_alcohol_drink = defineTab_no_alcohol_drink (n);
-    Tab_alcohol_drink = defineTab_alcohol_drink (n);
     int i;
     for (i = 0; i<n; i++){
         puts ("Entrer le nom et le degrés du cocktail");
@@ -107,14 +103,10 @@ alcohol_cocktail* defineTab_alcohol_cokctail (int n, int Verite){
     }
     return Tab_Alcohol_cocktail;
     free (Tab_Alcohol_cocktail);
-    free(Tab_alcohol_drink);
-    free(Tab_no_alcohol_drink);
 }
 
 noalcohol_cocktail* defineTab_no_alcohol_cokctail (int n){
     noalcohol_cocktail* Tab_no_alcohol_cocktail = malloc (n*sizeof (noalcohol_cocktail));
-    no_alcohol_drink* Tab_no_alcohol_drink = malloc (n*sizeof(alcohol_drink));
-    Tab_no_alcohol_drink = defineTab_no_alcohol_drink (n);
     int i;
     for (i = 0; i<n; i++){
         puts ("Entrer le nom et le degrés du cocktail");
@@ -122,5 +114,4 @@ noalcohol_cocktail* defineTab_no_alcohol_cokctail (int n){
     }
     return Tab_no_alcohol_cocktail;
     free (Tab_no_alcohol_cocktail);
-    free(Tab_no_alcohol_drink);
 }

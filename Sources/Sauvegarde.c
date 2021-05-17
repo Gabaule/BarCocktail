@@ -4,7 +4,7 @@
 #include <math.h>
 #include <string.h>
 #include "TypeStruct.h"
-#include "Intitialisation.h"
+#include "Initialisation.h"
 #include "Ajout_Supression.h"
 #include "Sauvegarde.h"
 
@@ -164,7 +164,7 @@ soda* Recup_Soda (int n, soda* Tab_Soda){
     return Tab_Soda;
 }
 
-alcohol_cocktail* Recup_alcool (int n, alcohol_drink* Tab_alcohol_drink){
+alcohol_drink* Recup_alcool (int n, alcohol_drink* Tab_alcohol_drink){
     int i;
     Alcool = fopen ("Alcool.txt", "r");
     if (Alcool == NULL){

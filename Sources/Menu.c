@@ -4,7 +4,7 @@
 #include <math.h>
 #include <string.h>
 #include "TypeStruct.h"
-#include "Intitialisation.h"
+#include "Initialisation.h"
 #include "Ajout_Supression.h"
 #include "Affichage.h"
 #include "Menu.h"
