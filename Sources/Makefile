@@ -5,8 +5,8 @@ EXEC=Projet
 
 all : $(EXEC)
 
-Projet : typestruct.h main.o menu.o initialisation.o ajout_suppression.o sauvegarde.o affichage.o menu.h sauvegarde.h affichage.h ajout_suppression.h initialisation.h affichage.h
-		$(CC) -o typestruct.h main.o menu.o initialisation.o ajout_suppression.o sauvegarde.o affichage.o menu.h sauvegarde.h affichage.h ajout_suppression.h initialisation.h affichage.h $(LDFLAGS)
+Projet : main.o menu.o initialisation.o ajout_suppression.o sauvegarde.o affichage.o typestruct.h menu.h sauvegarde.h affichage.h ajout_suppression.h initialisation.h affichage.h
+		$(CC) -o main.o menu.o initialisation.o ajout_suppression.o sauvegarde.o affichage.o typestruct.h menu.h sauvegarde.h affichage.h ajout_suppression.h initialisation.h affichage.h $(LDFLAGS)
 
 menu.o : menu.c
 	$(CC) -c menu.c $(CFLAGS)
